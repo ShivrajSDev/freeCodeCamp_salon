@@ -28,7 +28,7 @@ SELECT_SERVICE() {
 }
 
 SCHEDULE_APPOINTMENT() {
-  # get cutomer info
+  # get customer info
   echo -e "\nWhat's your phone number?"
   read CUSTOMER_PHONE
   CUSTOMER_NAME=$($PSQL "SELECT name FROM customers WHERE phone='$CUSTOMER_PHONE';")
